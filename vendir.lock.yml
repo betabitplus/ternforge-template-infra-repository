@@ -2,10 +2,10 @@ apiVersion: vendir.k14s.io/v1alpha1
 directories:
 - contents:
   - git:
-      commitTitle: 'chore(main): release ternforge-template-components 1.0.0 (#1)...'
-      sha: a3682f8854b332318d18f22fd1a40aa31c8cec73
+      commitTitle: 'chore(main): release 1.1.0 (#3)...'
+      sha: 93e907e65eeadac589be4fc449efa3edc8f2c4bc
       tags:
-      - ternforge-template-components-v1.0.0
+      - v1.1.0
     path: .
   path: template/_components
 kind: LockConfig
