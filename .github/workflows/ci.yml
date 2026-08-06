@@ -105,6 +105,14 @@ jobs:
             echo 'No previous release exists yet; fresh acceptance is sufficient for bootstrap.'
             exit 0
           fi
+          commit_project() {
+            local project="$1"
+            git -C "$project" init --initial-branch=main
+            git -C "$project" config user.name 'Ternforge acceptance'
+            git -C "$project" config user.email 'acceptance@ternforge.invalid'
+            git -C "$project" add --all
+            git -C "$project" commit -m 'test: prepare update fixture'
+          }
           target="$RUNNER_TEMP/update"
           uvx --from copier==9.17.0 copier copy \
             --defaults \
@@ -115,6 +123,7 @@ jobs:
             "$target"
           printf '# Operator-owned README\n' >"$target/README.md"
           printf 'operator sentinel\n' >"$target/operator.txt"
+          commit_project "$target"
           uvx --from copier==9.17.0 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$target"
           grep -F '# Operator-owned README' "$target/README.md"
           grep -F 'operator sentinel' "$target/operator.txt"
@@ -128,6 +137,7 @@ jobs:
             https://github.com/${{ github.repository }}.git \
             "$deleted"
           rm "$deleted/README.md"
+          commit_project "$deleted"
           uvx --from copier==9.17.0 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$deleted"
           test ! -e "$deleted/README.md"
 
