@@ -9,7 +9,6 @@ directories:
           ref: v1.1.0
         includePaths:
           - components/repository/base/**/*
-          - components/repository/copier/**/*
         excludePaths:
           - .git
           - .git/**/*
