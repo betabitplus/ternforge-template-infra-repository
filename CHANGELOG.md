@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.1...v1.2.2) (2026-08-08)
+
+
+### Bug Fixes
+
+* preserve repository gitignore ownership ([#18](https://github.com/betabitplus/ternforge-template-infra-repository/issues/18)) ([860e212](https://github.com/betabitplus/ternforge-template-infra-repository/commit/860e212e99d6a41e286b09244b371b5f268329ab))
+
 ## [1.2.1](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.0...v1.2.1) (2026-08-08)
 
 
