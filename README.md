@@ -18,6 +18,6 @@ Role-specific workflows and configuration belong to the consuming repository.
 The template is self-contained; shared Python-product components are not part of
 this minimal infrastructure product.
 
-`README.md` is create-once. Copier updates preserve an edited README, do not
-restore one deleted by the consumer, preserve unrelated files, and continue to
-update template-managed files.
+`README.md` and `.gitignore` are create-once. Copier updates preserve repository-
+specific content in both files, do not restore a README deleted by the consumer,
+preserve unrelated files, and continue to update the remaining managed core.

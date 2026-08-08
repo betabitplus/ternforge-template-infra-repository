@@ -2,6 +2,7 @@ _subdirectory: template
 _templates_suffix: .jinja
 _answers_file: .copier-answers.yml
 _exclude:
+  - "{% if _copier_operation == 'update' %}.gitignore{% endif %}"
   - "{% if _copier_operation == 'update' %}README.md{% endif %}"
 
 repository_name:
