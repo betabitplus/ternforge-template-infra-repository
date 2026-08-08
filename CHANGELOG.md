@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.1.0...v1.2.0) (2026-08-08)
+
+
+### Features
+
+* dispatch template releases ([#8](https://github.com/betabitplus/ternforge-template-infra-repository/issues/8)) ([be7d466](https://github.com/betabitplus/ternforge-template-infra-repository/commit/be7d466a7fdfd54134549ce5d84c22203682a2e6))
+
 ## [1.1.0](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.0.0...v1.1.0) (2026-08-06)
 
 
