@@ -8,7 +8,6 @@ directories:
           url: https://github.com/betabitplus/ternforge-template-components.git
           ref: v1.1.0
         includePaths:
-          - components/agents/base/**/*
           - components/repository/base/**/*
           - components/repository/copier/**/*
         excludePaths:
