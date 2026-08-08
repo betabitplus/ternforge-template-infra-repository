@@ -98,10 +98,12 @@ jobs:
             https://github.com/${{ github.repository }}.git \
             "$target"
           printf '# Operator-owned README\n' >"$target/README.md"
+          printf '# Operator-owned ignore\n' >>"$target/.gitignore"
           printf 'operator sentinel\n' >"$target/operator.txt"
           commit_project "$target"
           uvx --from copier==9.17.0 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$target"
           grep -F '# Operator-owned README' "$target/README.md"
+          grep -F '# Operator-owned ignore' "$target/.gitignore"
           grep -F 'operator sentinel' "$target/operator.txt"
 
           deleted="$RUNNER_TEMP/deleted-readme"
