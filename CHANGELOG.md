@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.1](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.0...v1.2.1) (2026-08-08)
+
+
+### Bug Fixes
+
+* make infrastructure template self-contained ([#17](https://github.com/betabitplus/ternforge-template-infra-repository/issues/17)) ([6268b05](https://github.com/betabitplus/ternforge-template-infra-repository/commit/6268b050fe5272190115adcdbfeb4fd3e4488885))
+* remove unused copier component dependency ([#16](https://github.com/betabitplus/ternforge-template-infra-repository/issues/16)) ([0b39956](https://github.com/betabitplus/ternforge-template-infra-repository/commit/0b39956d5aab6c26e46384d1d6019d73ec87cc44))
+* simplify infrastructure agent ownership ([#14](https://github.com/betabitplus/ternforge-template-infra-repository/issues/14)) ([21be7c2](https://github.com/betabitplus/ternforge-template-infra-repository/commit/21be7c2c98e8e77f1ca800c5dfcc499d6e289a7a))
+
 ## [1.2.0](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.1.0...v1.2.0) (2026-08-08)
 
 
