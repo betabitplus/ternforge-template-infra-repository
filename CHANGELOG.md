@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.2...v1.2.3) (2026-08-09)
+
+
+### Bug Fixes
+
+* protect release credentials ([#22](https://github.com/betabitplus/ternforge-template-infra-repository/issues/22)) ([5d553f8](https://github.com/betabitplus/ternforge-template-infra-repository/commit/5d553f8f4c3da98a05b2409673cbc9503c1911d0))
+
 ## [1.2.2](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.1...v1.2.2) (2026-08-08)
 
 
