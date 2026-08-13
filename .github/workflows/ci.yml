@@ -52,6 +52,7 @@ jobs:
 
       - name: Verify fresh generated product
         env:
+          GH_TOKEN: ${{ github.token }}
           TEMPLATE_REF: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
@@ -78,6 +79,7 @@ jobs:
       - name: Verify previous-release update ownership
         if: github.event_name == 'pull_request'
         env:
+          GH_TOKEN: ${{ github.token }}
           TEMPLATE_REF: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
