@@ -39,6 +39,11 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      - name: Configure git authentication for template self-clone
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh auth setup-git
+
       - name: Set up uv
         uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
         with:
