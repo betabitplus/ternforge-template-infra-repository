@@ -15,8 +15,6 @@ The generated product contains only the role-neutral repository shell:
 - `README.md`
 
 Role-specific workflows and configuration belong to the consuming repository.
-The template is self-contained; shared Python-product components are not part of
-this minimal infrastructure product.
 
 `README.md` and `.gitignore` are create-once. Copier updates preserve repository-
 specific content in both files, do not restore a README deleted by the consumer,
