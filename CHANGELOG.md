@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.3...v1.3.0) (2026-08-16)
+
+
+### Features
+
+* support private local CI routing ([#32](https://github.com/betabitplus/ternforge-template-infra-repository/issues/32)) ([f1d0c71](https://github.com/betabitplus/ternforge-template-infra-repository/commit/f1d0c7101734966518d79694488b4c8cc4ae3a50))
+
+
+### Bug Fixes
+
+* keep template git credential available ([#31](https://github.com/betabitplus/ternforge-template-infra-repository/issues/31)) ([8aa328e](https://github.com/betabitplus/ternforge-template-infra-repository/commit/8aa328eb0430ca2f9d1fd5dc4706c199d2bd617f))
+* support private template self-clone ([#28](https://github.com/betabitplus/ternforge-template-infra-repository/issues/28)) ([5603f26](https://github.com/betabitplus/ternforge-template-infra-repository/commit/5603f26a036a5e025fde66ea93c2d875cdf8f502))
+
 ## [1.2.3](https://github.com/betabitplus/ternforge-template-infra-repository/compare/v1.2.2...v1.2.3) (2026-08-09)
 
 
