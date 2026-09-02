@@ -57,7 +57,7 @@ jobs:
         run: |
           set -euo pipefail
           target="$RUNNER_TEMP/fresh"
-          uvx --from copier==9.17.2 copier copy \
+          uvx --from copier==9.18.1 copier copy \
             --defaults \
             --data repository_name=acceptance-infra \
             --data repository_description='Acceptance infrastructure repository.' \
@@ -97,7 +97,7 @@ jobs:
             git -C "$project" commit -m 'test: prepare update fixture'
           }
           target="$RUNNER_TEMP/update"
-          uvx --from copier==9.17.2 copier copy \
+          uvx --from copier==9.18.1 copier copy \
             --defaults \
             --data repository_name=acceptance-infra \
             --data repository_description='Acceptance infrastructure repository.' \
@@ -108,13 +108,13 @@ jobs:
           printf '# Operator-owned ignore\n' >>"$target/.gitignore"
           printf 'operator sentinel\n' >"$target/operator.txt"
           commit_project "$target"
-          uvx --from copier==9.17.2 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$target"
+          uvx --from copier==9.18.1 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$target"
           grep -F '# Operator-owned README' "$target/README.md"
           grep -F '# Operator-owned ignore' "$target/.gitignore"
           grep -F 'operator sentinel' "$target/operator.txt"
 
           deleted="$RUNNER_TEMP/deleted-readme"
-          uvx --from copier==9.17.2 copier copy \
+          uvx --from copier==9.18.1 copier copy \
             --defaults \
             --data repository_name=deleted-readme \
             --vcs-ref "$previous_tag" \
@@ -122,7 +122,7 @@ jobs:
             "$deleted"
           rm "$deleted/README.md"
           commit_project "$deleted"
-          uvx --from copier==9.17.2 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$deleted"
+          uvx --from copier==9.18.1 copier update --defaults --vcs-ref "$TEMPLATE_REF" "$deleted"
           test ! -e "$deleted/README.md"
 
       - name: Verify repository files
